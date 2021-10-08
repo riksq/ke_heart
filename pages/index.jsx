@@ -8,14 +8,6 @@ export default function Home(props) {
     const router = useRouter();
     const { query } = router;
     const gtm = query.gtm;
-    //const blackcss = {
-       // margin: 10,
-       // border: "0px",
-      //  color: "blue",
-       // backgroundColor: "yellow",
-       // width: "70%",
-       // height: "40px",
-   // };
     const bluecss = {
         margin: 10,
         border: "0px",

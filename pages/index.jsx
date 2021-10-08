@@ -8,14 +8,14 @@ export default function Home(props) {
     const router = useRouter();
     const { query } = router;
     const gtm = query.gtm;
-    const blackcss = {
-        margin: 10,
-        border: "0px",
-        color: "blue",
-        backgroundColor: "yellow",
-        width: "70%",
-        height: "40px",
-    };
+    //const blackcss = {
+       // margin: 10,
+       // border: "0px",
+      //  color: "blue",
+       // backgroundColor: "yellow",
+       // width: "70%",
+       // height: "40px",
+   // };
     const bluecss = {
         margin: 10,
         border: "0px",
@@ -51,7 +51,7 @@ export default function Home(props) {
        // alert(gtm);
         // TagManager.initialize({ gtmId: "GTM-PTZV39P" });
         // TagManager.initialize({ gtmId: "GTM-59WP5XJ" });
-       TagManager.initialize({ gtmId: "GTM-KQ7PH5C" });
+       TagManager.initialize({ gtmId: "GTM-TZ9R22F" });
        // if (gtm) {
           //  TagManager.initialize({ gtmId: gtm });
        // }
@@ -59,8 +59,8 @@ export default function Home(props) {
     return (
         <div className={styles.container}>
             <Head>
-                <title>Kindly confirm you are not a robot</title>
-                <meta name="description" content="Kindly confirm you are not a robot" />
+                <title>Answer the question</title>
+                <meta name="description" content="Answer the question" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
@@ -72,21 +72,21 @@ export default function Home(props) {
                             width="17px"
                             height="20px"
                         />{" "}
-                        Kindly confirm you are not a robot
+                        You have blood pressure problems
                     </h2>
                 </div>
                 <div>
-                    <h3>Click a RED button</h3>
-                    <div>
-                        <button
-                            onClick={() => {
-                                redirect(false);
-                            }}
-                            style={blackcss}
-                        >
-                            BLACK
-                        </button>
-                    </div>
+                    <h3>Answer YES or NO</h3>
+                    //<div>
+                       // <button
+                         //   onClick={() => {
+                            //    redirect(false);
+                           // }}
+                          //  style={blackcss}
+                      //  >
+                        //    BLACK
+                       // </button>
+                   // </div>
                     <div>
                         <button
                             onClick={() => {
@@ -94,7 +94,7 @@ export default function Home(props) {
                             }}
                             style={bluecss}
                         >
-                            BLUE
+                            YES
                         </button>
                     </div>
                     <div>
@@ -104,7 +104,7 @@ export default function Home(props) {
                             }}
                             style={redcss}
                         >
-                            RED
+                            NO
                         </button>
                     </div>
                 </div>

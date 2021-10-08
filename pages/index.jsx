@@ -77,16 +77,7 @@ export default function Home(props) {
                 </div>
                 <div>
                     <h3>Answer YES or NO</h3>
-                    //<div>
-                       // <button
-                         //   onClick={() => {
-                            //    redirect(false);
-                           // }}
-                          //  style={blackcss}
-                      //  >
-                        //    BLACK
-                       // </button>
-                   // </div>
+                 
                     <div>
                         <button
                             onClick={() => {
